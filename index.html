@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>LASTIG - Pierre-Louis Frison</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> </link>
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i">
+  <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="vendor/academicons/css/academicons.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="css/resume.css" rel="stylesheet">
+  <link href="css/extras.css" rel="stylesheet">
+
+  <!-- scripts on load -->
+  <script src="vendor/d3/d3.min.js"></script>
+  <script src="js/papaparse.min.js"></script>
+  <script src="js/reviewing.js" charset="utf-8"></script>
+  <script src="js/hal.js" charset="utf-8"></script>
+  <script src="js/news.js" charset="utf-8"></script>
+
+</head>
+
+<body id="page-top" onload="displayNews(); getPublicationsAuthor('Bruno-Vallet');">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <select class="selectpicker" data-width="fit">
+      <option data-content='<span class="flag-icon flag-icon-us"></span>'>English</option>
+      <option data-content='<span class="flag-icon flag-icon-fr"></span>'>Français</option>
+    </select>
+    <a class="nav-link text-muted subheading" href="/website">LASTIG</a>
+    <a class="nav-link text-muted subheading" href="/acte">ACTE</a>
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Pierre-Louis Frison</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/id_frison.png" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about"><span class="lang-en">About</span><span class="lang-fr">Présentation</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interest"><span class="lang-en">Research Interests</span><span class="lang-fr">Sujets de recherche</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+        </li>
+</li>
+		<li class="nav-item">
+			<a class="nav-link js-scroll-trigger" href="#teaching"><span class="lang-en">Teaching</span><span class="lang-fr">Enseignement</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Pierre-Louis
+          <span class="text-primary">Frison</span>
+        </h1>
+		<div class="subheading mb-5"><a href="/">LASTIG</a>, <a href="https://www.univ-gustave-eiffel.fr/">Univ Gustave Eiffel</a>, <a href="https://www.ign.fr/">IGN</a>-<a href="https://www.ensg.eu/">ENSG</a></p>
+        <div class="subheading mb-5">5 boulevard Descartes · Batiment ADN, 77 454 Marne la Vallée Cedex ·
+          <a>pierre&#8209;louis<!--anti@spam.fr!-->.frison@u&#8209;pem.fr</a>
+        </div>
+        <p class="lead mb-5 lang-en">Assistant Professor, Remote Sensing of Terrestrial Surfaces.</p>
+        <p class="lead mb-5 lang-en">Coordinator of the <a href="https://formations.univ-gustave-eiffel.fr/index.php?id=1941&L=0&tx_agof_brochure%5Bbrochure%5D=411&tx_agof_brochure%5Baction%5D=show&tx_agof_brochure%5Bcontroller%5D=Brochure&cHash=d615bfbf63cfb6934e270588ff680732">Master 2 Geographical Information, Spatial Analysis and Remote Sensing</a> </p>
+        <p class="lead mb-5 lang-fr">Maître de Conférences HDR en télédétection des surfaces terrestres</p>
+        <p class="lead mb-5 lang-fr">Responsable du <a href="https://formations.univ-gustave-eiffel.fr/index.php?id=1941&L=0&tx_agof_brochure%5Bbrochure%5D=411&tx_agof_brochure%5Baction%5D=show&tx_agof_brochure%5Bcontroller%5D=Brochure&cHash=d615bfbf63cfb6934e270588ff680732">Master 2 Information Géographique, Analyse Spatiale et Télédétection</a></p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="interest">
+      <div class="w-100">
+        <h2 class="mb-5 lang-en">Research Interests</h2>
+        <h2 class="mb-5 lang-fr">Sujets de recherche</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <article class="col-md-6 col-lg-4">
+                <div class="portfolio-item d-block mx-auto">
+                  <img class="img-fluid" src="img/ParcW.png" alt="" />
+                  <div class="portfolio-desc d-flex align-center position-absolute h-100 w-100">
+                    <div class="folio-info my-auto w-100 text-center">
+                      <h5 class="lang-en">Vegetation Cartography Forest Monitoring  Land Use Monitoring</h5>
+                      <h5 class="lang-fr">Cartographie de la végétation, Suivi des forêts, Suivi de l'Occupation des Sols</h5>
+                    </div>
+                  </div>
+                </div>
+          </article>
+          <article class="col-md-6 col-lg-4">
+                <div class="portfolio-item d-block mx-auto">
+                  <img class="img-fluid" src="img/Moctar.png" alt="" />
+                  <div class="portfolio-desc align-center position-absolute h-100 w-100">
+                    <div class="folio-info w-100 text-center">
+                      <h5 class="lang-en">crops monitoring with radar data</h5>
+                      <h5 class="lang-fr">Suivi des cultures par télédétection radar</h5>
+                    </div>
+                  </div>
+                </div>
+          </article>
+          </div>
+          <div class="row">
+          <article class="col-md-6 col-lg-4">
+                <div class="portfolio-item d-block mx-auto">
+                  <img class="img-fluid" src="img/Scat.png" alt="" />
+                  <div class="portfolio-desc d-flex align-center position-absolute h-100 w-100">
+                    <div class="folio-info my-auto w-100 text-center">
+                      <h5 class="lang-en">Terrestrial surfaces monitoring at global/regional scales</h5>
+                      <h5 class="lang-fr">Suivi des surfaces terrestres à l'échelle gLobale/régionale</h5>
+                    </div>
+                  </div>
+                </div>
+          </article>
+          <article class="col-md-6 col-lg-4">
+                <div class="portfolio-item d-block mx-auto">
+                  <img class="img-fluid" src="img/KitQgis.png" alt="" />
+                  <div class="portfolio-desc align-center position-absolute h-100 w-100">
+                    <div class="folio-info w-100 text-center">
+                      <h5 class="lang-en"> <a href="https://gitlab.com/sentinel4all/kit_qgis_sentinel"> Customized QGIS software</a> for Sentinel-1 data processing </h5>
+                      <h5 class="lang-fr"> <a href="https://gitlab.com/sentinel4all/kit_qgis_sentinel"> Kit QGIS</a> dedié au traitement des données Sentinel-1 </h5>
+                    </div>
+                  </div>
+                </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+	
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="teaching">
+      <div class="w-100">
+        <h2 class="mb-5"> <span class="lang-en"> Teaching </span> <span class="lang-fr"> Enseignement </span> </h2>
+        <div class="subheading-en mb-2"> 
+          <h3 class="lang-en"> Image Processing </h3> 
+          <h3 class="lang-fr"> Traitement d'images </h3> </h2>
+        </div> 
+  <ul class="fa-ul mb-0">
+  <ul class="fa-ul mb-0">
+            <li class="lang-en"> <a href="./cours/cours_ima/ima_numeriques.pdf"> Numerical images</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_ima/ima_numeriques.pdf"> Images Numériques</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_ima/histogrammes.pdf"> Histograms</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_ima/histogrammes.pdf"> Histogrammes</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_ima/freq_spatiales.pdf"> Spatial frequencies</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_ima/freq_spatiales.pdf"> Fréquences spatiales</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_ima/filtr_spatial.pdf"> Spatial filtering</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_ima/filtr_spatial.pdf"> Filtrage spatial</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_ima/filtr_frequ.pdf"> Frequential filtering</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_ima/filtr_frequ.pdf"> Filtrage fréquentiel</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_ima/quantification.pdf"> Quantification</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_ima/quantification.pdf"> Quantification</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_ima/ima_numeriquesresampling.pdf"> Resampling</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_ima/resampling.pdf"> Rééchantillonnage</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_ima/couleur.pdf"> Colors</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_ima/couleurpdf"> Couleurs</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_ima/morfo_math.pdf"> Mathematical morphology</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_ima/morfo_math.pdf"> Morphologie mathématique</a> </li>
+  </ul>
+  </ul>
+
+<div class="subheading-en /mb-3"> 
+  <h3 class="lang-en"> Remote Sensing </h3>
+  <h3 class="lang-fr"> Télédétection </h3>
+  <ul class="fa-ul mb-0">
+    <h4 class="lang-en"> General </h4>
+    <h4 class="lang-fr"> Généralités </h4>  
+     <ul class="fa-ul mb-0">
+            <li class="lang-en"> <a href="./cours/cours_tld/teledec_en/0_tld_intro_en.pdf"> Remote Sensing - intro</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_tld/teledec/0_radar_intro.pdf"> Télédétection - intro</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_tld/teledec_en/1_radiometry_en.pdf"> Radiometry</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_tld/teledec/1_photometrie.pdf"> Photométrie</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_tld/teledec_en/2_optical_dom_en.pdf"> Optical domain</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_tld/teledec/2_dom_optique.pdf"> Domaine optique</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_tld/teledec_en/3_opt_info_spat_en.pdf"> Images collection</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_tld/teledec/3_opt_info_spat.pdf"> Information spatiale: exemples</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_tld/teledec_en/4_TIR_passive_mwaves.pdf"> RThermal IR and Microwaves</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_tld/teledec/4_irt_micropas.pdf"> IR thermique - hyperfréquences passives</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_tld/teledec_en/5_classidication_en.pdf"> Classification</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_tld/teledec/5_classification.pdf"> classification</a> </li>
+</ul>
+    <h4 class="lang-en"> Radar </h4>
+    <h4 class="lang-fr"> Radar </h4>  
+  </ul>
+</div>
+  <ul class="fa-ul mb-0">
+  <ul class="fa-ul mb-0">
+            <li class="lang-en"> <a href="./cours/cours_tld/radar/0_radar_intro.pdf"> Radar course - intro</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_tld/radar/0_radar_intro.pdf"> Cours radar - intro</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_tld/radar/1_radar_imaging.pdf"> Radar imaging</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_tld/radar/1_radar_imaging.pdf"> Imagerie radar</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_tld/radar/2_radar_polar.pdf"> Polarizations - Polarimetry</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_tld/radar/2_radar_polar.pdf"> Polarisations - Polarimetrie</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_tld/radar/3a_radar_sensitivity1.pdf"> Radar sensitivity - Part 1</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_tld/radar/3a_radar_sensitivity1.pdf"> Sensibilité des images radar - I</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_tld/radar/3b_radar_sensitivity2.pdf"> Radar sensitivity - Part 2</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_tld/radar/3b_radar_sensitivity2.pdf"> Sensibilité des images radar - II</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_tld/radar/4_radar_relief.pdf"> Relief effects</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_tld/radar/4_radar_relief.pdf"> Effets du relief</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_tld/radar/5_radar_speckle.pdf"> Speckle - Filtering</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_tld/radar/5_radar_speckle.pdf"> Speckle - Filtrage</a> </li>
+            <li class="lang-en"> <a href="./cours/cours_tld/radar/5l_radar_speckle_light.pdf"> Speckle - Filtering (light version)</a> </li>
+            <li class="lang-fr"> <a href="./cours/cours_tld/radar/5l_radar_speckle_light.pdf"> Speckle - Filtrage (version light)</a> </li>
+  </ul>
+</ul>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/jquery.isotope.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.js"></script>
+
+</body>
+
+</html>
